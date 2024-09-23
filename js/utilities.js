@@ -15,6 +15,17 @@ function getTextFieldValueById(id){
     return amountNumber;
 }
 
-function showSectionById(){
-    
+function showSectionById(id){
+    document.getElementById('donation-page').classList.add('hidden');
+    document.getElementById('history-page').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+    return;
+}
+
+function toggleButton(id){
+    document.getElementById('btn-donation').classList.remove('active');
+    document.getElementById('btn-history').classList.remove('active');
+
+    document.getElementById(id).classList.add('active');
 }
