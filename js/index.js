@@ -18,13 +18,15 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
     const donationName = document.getElementById('donation-noakhali').innerText;
     const div = document.createElement('div');
-    div.classList.add('border', 'rounded-lg', 'p-5', 'text-xl')
+    div.classList.add('border', 'rounded-lg','p-3', 'md:p-5','text-md', 'md:text-xl')
     div.innerHTML = `
         <p>${addedAmount} Taka is donated for ${donationName}</p>
         <p>Date: ${formattedDate} </p>
     `
     document.getElementById('history-container').appendChild(div);
 
+    my_modal_1.showModal();
+    document.getElementById('input-donate-noakhali').value = '';
 })
 
 document.getElementById('btn-donate-feni').addEventListener('click', function () {
@@ -47,12 +49,14 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
     const donationName = document.getElementById('donation-feni').innerText;
     const div = document.createElement('div');
-    div.classList.add('border', 'rounded-lg', 'p-5', 'text-xl')
+    div.classList.add('border', 'rounded-lg','p-3', 'md:p-5','text-md', 'md:text-xl')
     div.innerHTML = `
         <p>${addedAmount} Taka is donated for ${donationName}</p>
         <p>Date: ${formattedDate} </p>
     `
     document.getElementById('history-container').appendChild(div);
+    my_modal_1.showModal();
+    document.getElementById('input-donate-feni').value = '';
 })
 
 document.getElementById('btn-donate-for-aid').addEventListener('click', function () {
@@ -75,10 +79,12 @@ document.getElementById('btn-donate-for-aid').addEventListener('click', function
 
     const donationName = document.getElementById('donation-for-aid').innerText;
     const div = document.createElement('div');
-    div.classList.add('border', 'rounded-lg', 'p-5', 'text-xl')
+    div.classList.add('border', 'rounded-lg','p-3', 'md:p-5','text-md', 'md:text-xl')
     div.innerHTML = `
         <p>${addedAmount} Taka is donated for ${donationName}</p>
         <p>Date: ${formattedDate} </p>
     `
     document.getElementById('history-container').appendChild(div);
+    my_modal_1.showModal();
+    document.getElementById('input-donate-for-aid').value ='';
 })
