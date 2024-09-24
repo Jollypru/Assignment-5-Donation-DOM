@@ -5,7 +5,9 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     const currentBalance = getTextFieldValueById('current-balance');
     if ((addedAmount > currentBalance) || (addedAmount < 0) || isNaN(addedAmount) || addedAmount === '') {
         alert('Invalid Donation Amount');
+        document.getElementById('input-donate-noakhali').value = '';
         return;
+       
     }
     const totalDonatedAmount = addedAmount + donatedAmount;
     document.getElementById('donatedAmountNoakhali').innerText = totalDonatedAmount;
@@ -14,7 +16,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     document.getElementById('current-balance').innerText = updatedBalance;
 
     const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka' });
+    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: true });
 
     const donationName = document.getElementById('donation-noakhali').innerText;
     const div = document.createElement('div');
@@ -36,6 +38,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
     if ((addedAmount > currentBalance) || (addedAmount < 0) || isNaN(addedAmount) || addedAmount === '') {
         alert('Invalid Donation Amount');
+        document.getElementById('input-donate-feni').value = '';
         return;
     }
     const totalDonatedAmount = addedAmount + donatedAmount;
@@ -45,7 +48,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
     document.getElementById('current-balance').innerText = updatedBalance;
 
     const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka' });
+    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: true });
 
     const donationName = document.getElementById('donation-feni').innerText;
     const div = document.createElement('div');
@@ -66,6 +69,7 @@ document.getElementById('btn-donate-for-aid').addEventListener('click', function
 
     if ((addedAmount > currentBalance) || (addedAmount < 0) || isNaN(addedAmount) || addedAmount === '') {
         alert('Invalid Donation Amount');
+        document.getElementById('input-donate-for-aid').value ='';
         return;
     }
     const totalDonatedAmount = addedAmount + donatedAmount;
@@ -75,7 +79,7 @@ document.getElementById('btn-donate-for-aid').addEventListener('click', function
     document.getElementById('current-balance').innerText = updatedBalance;
 
     const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka' });
+    const formattedDate = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: true });
 
     const donationName = document.getElementById('donation-for-aid').innerText;
     const div = document.createElement('div');
