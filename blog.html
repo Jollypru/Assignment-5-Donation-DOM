@@ -31,35 +31,43 @@
             </div>
         </nav>
     </header>
-    <main class="md:w-11/12 m-auto mt-5">
+    <main class="md:w-11/12 m-auto mt-5 p-3">
         <h2 class="text-2xl font-bold mb-5">Important FAQ</h2>
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" checked="checked" />
               <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p>Document Object Model (DOM) is a programming interface. When a webpage is loaded, the HTML doc is converted to DOM tree. It allows us to create, change or remove elements from the document. We can manipulate HTML elements easily using DOM.We can also add events to these elements to make our page more dynamic.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
               <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="font-semibold">We can select an element form the DOM in many ways, such as - <br>
+                  <p class="ml-5">
+                    a. getElementById()-- it will select a single element using that id provided as the argument. <br>
+                    b. getElementByTag()-- it will select all the elements containing the given tag name. <br>
+                    c. getElementByClass()-- it will select those elements that contain the given class name. <br>
+                    d. querySelector()-- it will the element containing given id or the first element containing the given class name. <br>
+                    e. querySelectorAll()-- it will select all the elements containing the given class name.
+                  </p>
+                </p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
               <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p>Event delegation is a design pattern in JavaScript used to efficiently mange and handle events on multiple child elements by attaching a single event listener to a common parent element. Instead of attaching a click handler to each item, event delegation allows us to attacj a single listener to the parent container. It is very useful when dealing with dynamic content.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
                 <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>An element's attributes and styles can be manipulated by using element selectors. There are several methods to select element. We can select a single element or multiple element consisting same tag name or class name by the element selector and then manipulate the element's attributes and styles as needed.</p>
                 </div>
               </div>
           </div>
